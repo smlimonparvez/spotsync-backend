@@ -1,0 +1,11 @@
+# Binaries
+tmp/
+spotsync
+*.exe
+
+# Environment
+.env
+
+# IDE
+.vscode/
+.idea/
