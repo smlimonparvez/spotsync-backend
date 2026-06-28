@@ -1,5 +1,45 @@
-# 🚗 SpotSync – Smart Parking & EV Charging Reservation API
+# SpotSync – Smart Parking & EV Charging Reservation API
 
+## 🚗 Project Overview
+
+SpotSync is a centralized platform for busy airports and malls to manage parking zones, specifically handling the high-demand reservation of limited EV charging spots. Built with Go, Echo, GORM, and PostgreSQL following Clean Architecture principles.
+
+## 🌐 Live Deployment
+
+- **API URL:** [https://spotsync-api.onrender.com](https://spotsync-api.onrender.com)
+- **Repository:** [https://github.com/smlimonparvez/spotsync-backend](https://github.com/smlimonparvez/spotsync-backend)
+
+## ✨ Features
+
+### Authentication
+- User registration with role-based access (driver/admin)
+- Secure login with JWT token generation
+- Password hashing using bcrypt
+
+### Parking Zones
+- View all parking zones with real-time availability
+- Admin CRUD operations for zones
+- Zone types: general, ev_charging, covered
+- Dynamic available spots calculation
+
+### Reservations (Core Logic)
+- **Concurrency-safe reservations** using GORM transactions with `FOR UPDATE` row locking
+- Prevent over-booking with atomic capacity checks
+- View personal reservations
+- Cancel own reservations
+- Admin view all reservations
+
+## 🛠️ Technology Stack
+
+| Technology | Version | Purpose |
+|------------|---------|---------|
+| **Go** | 1.22+ | Backend language |
+| **Echo** | v4 | Web framework |
+| **GORM** | Latest | ORM for PostgreSQL |
+| **PostgreSQL** | Latest | Database |
+| **JWT** | v5 | Authentication |
+| **bcrypt** | v0.1.0+ | Password hashing |
+| **Validator** | v10 | Request validation |
 **Tech Stack:** Go 1.22 · Echo · GORM · PostgreSQL (NeonDB) · JWT · bcrypt
 
 ---
