@@ -6,7 +6,7 @@ SpotSync is a centralized platform for busy airports and malls to manage parking
 
 ## 🌐 Live Deployment
 
-- **API URL:** [https://spotsync-api.onrender.com](https://spotsync-api.onrender.com)
+- **API URL:** [https://spotsync-api-gu0x.onrender.com/](https://spotsync-api-gu0x.onrender.com/)
 - **Repository:** [https://github.com/smlimonparvez/spotsync-backend](https://github.com/smlimonparvez/spotsync-backend)
 
 ## ✨ Features

@@ -71,7 +71,7 @@ func New(cfg *config.Config, db *gorm.DB) *Server {
 
 	// ─── Route registration ──────────────────────────────────────────────────
 	e.GET("/", func(c echo.Context) error {
-		return c.String(200, "Hello World SpotSync API running!")
+		return c.String(200, "Hello World SpotSync API is running!")
 	})
 
 	api := e.Group("/api/v1")
