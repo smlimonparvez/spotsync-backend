@@ -6,7 +6,7 @@ import (
 	"spotsync/internal/auth"
 	"spotsync/internal/httpresponse"
 
-	"github.com/labstack/echo/v5"
+	"github.com/labstack/echo/v4"
 )
 
 // JWT returns an Echo middleware that validates Bearer tokens and injects

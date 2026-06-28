@@ -3,7 +3,7 @@ package httpresponse
 import (
 	"net/http"
 
-	"github.com/labstack/echo/v5"
+	"github.com/labstack/echo/v4"
 )
 
 // Envelope is the standard JSON wrapper for every API response.

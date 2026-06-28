@@ -12,8 +12,8 @@ import (
 	"spotsync/internal/domain/user"
 	"spotsync/internal/middlewares"
 
-	"github.com/labstack/echo/v5"
-	echoMW "github.com/labstack/echo/v5/middleware"
+	"github.com/labstack/echo/v4"
+	echoMW "github.com/labstack/echo/v4/middleware"
 	"gorm.io/gorm"
 )
 
