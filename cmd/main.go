@@ -3,9 +3,10 @@ package main
 import (
 	"log"
 
+	"spotsync/internal/config"
+	"spotsync/internal/server"
+
 	"github.com/joho/godotenv"
-	"github.com/limon/spotsync/internal/config"
-	"github.com/limon/spotsync/internal/server"
 )
 
 func main() {
@@ -14,11 +15,13 @@ func main() {
 		log.Println("No .env file found, reading from environment")
 	}
 
+	// Build typed config from env vars
 	cfg := config.Load()
 
+	// Open database connection using config
 	db := config.ConnectDB(cfg)
 
-	// Start HTTP server
+	// Start HTTP server (registers routes + auto-migrates)
 	srv := server.New(cfg, db)
 	srv.Start()
 }
